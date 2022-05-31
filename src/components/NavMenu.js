@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../images/logo.svg";
 import LoadingButton from "../components/LoadingButton.js";
-import Welcome from "../pages/Welcome";
+import WelcomeWallet from "./WelcomeWallet";
 import Web3 from "web3";
 
 export default function NavMenu() {
@@ -39,7 +39,7 @@ export default function NavMenu() {
               className="d-inline-block align-top"
             />
             {"  "}
-            React
+            Dapp React
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
@@ -50,7 +50,7 @@ export default function NavMenu() {
             {!isConnected && (
               <LoadingButton onLogin={onLogin} onLogout={onLogout} />
             )}
-            {isConnected && <Welcome currentAccount={currentAccount}/>}
+            {isConnected && <WelcomeWallet currentAccount={currentAccount}/>}
           </Navbar.Collapse>
         </Container>
       </Navbar>

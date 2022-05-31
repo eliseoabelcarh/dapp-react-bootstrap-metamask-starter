@@ -1,13 +1,7 @@
-import Header from '../components/Header'
-import Meta from '../components/Meta'
 import * as Icon from 'react-bootstrap-icons';
 
-const Welcome = (props) => {
- 
-  // page content
-  const pageTitle = 'Welcome'
-  const pageDescription = 'welcome to react bootstrap template'
-  
+const WelcomeWallet = (props) => {
+
   const reduceWallet =(str) => {
     var result = ""
     if(str.length >= 40){
@@ -24,4 +18,4 @@ const Welcome = (props) => {
   )
 }
 
-export default Welcome
+export default WelcomeWallet
