@@ -38,4 +38,5 @@ npm start
 
 Have a bug or an issue with this template? Open a new issue here on GitHub.
 
-
+### Screenshots
+![Screenshot](./src/images/previa1.png)
